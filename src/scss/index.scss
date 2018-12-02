@@ -1,0 +1,70 @@
+@import "common.scss";
+@import "mixin.scss";
+.warp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: pxTorem(14px);
+}
+
+.content {
+    width: 100%;
+    // flex: 1;
+}
+
+.header {
+    width: 100%;
+    height: pxTorem(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 pxTorem(15px);
+    box-sizing: border-box;
+    // background: green;
+}
+
+.main {
+    // display: flex;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.images {
+    // display: flex;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    display: flex;
+    height: pxTorem(200px);
+    .swiper-slide {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        dl {
+            width: 20%;
+            height: pxTorem(75px);
+            dt {
+                width: 100%;
+                display: flex;
+                img {
+                    width: pxTorem(40px);
+                    height: pxTorem(40px);
+                    margin: 5px auto;
+                }
+            }
+            dd {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
